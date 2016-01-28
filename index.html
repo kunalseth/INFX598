@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -18,10 +18,69 @@
       <div class="inner">
 
         <header>
-          <h1>Projects for INFX 598- Interactive Information Visualization</h1>
+          <h1>Projects for INFX 598:<br>Interactive Information Visualization</h1>
         </header>
-		
-	<p><a href="https://public.tableau.com/profile/kunal.arun.seth#!/vizhome/INFX598-Assignment1/Dashboard4" target="_blank">
+
+    <div id="info1">
+    <H1 style="color: green">Assignment 2: Exploratory Data Analysis</H1>
+      <p>The initial question I posed was to find out which are the safe states to live in the United States of America, so I decided to see if I get can answer this question by understanding the murder trend.
+       <br>I initially extracted the data containing the murder count for all the 50 states for the year 2012.
+      <br>Below is my first graph-a histogram-which has been plotted for all the states on the x-axis against the count of murders on the y-axis.
+      <h5 style="font-weight:bold">Interpretation:</h5> Every bar represents a state and every state has a distinct colour.
+      <br><h5 style="font-weight:bold">Inference:</h5> California tops the list with the most number of murders followed by Texas and Florida with Wyoming and Vermont as the states with the lowest murders.<br>
+        <a href="https://public.tableau.com/profile/kunal.arun.seth#!/vizhome/State-NumberOfMurders/State-NumberOfMurders" target="_blank">
+        <img src="images/d1.png"></a>
+
+    <br><br>
+
+        <p>But this graph simply gave us the basic idea of how many murders took place in a particular state without considering other factors like area size or population so I further decided to drill down in the data.
+            <br>Next I decided to understand what changes when I include other factors such as population into the picture. I created a murder ratio index to calculate how many deaths occur per 100000 people in a particular state. Just having murder number doesn’t define how safe a state is but this gives a better picture. Below is the graph plotted for the murder ratio index against the population (for the entire state).  I also included a box and whisker plot to see the median and the range of the death ratio. California and Texas which actually have the highest deaths actually fall in the median range with DC having the highest death ratio.
+        <h5 style="font-weight:bold">Interpretation:</h5> Size represents the state population and colour represents the different states.
+        <br><h5 style="font-weight:bold">Inference:</h5> DC has more deaths per 100000 people as compared to any other state and quite a few states fall under within the 25% and 75% quartiles.<br>
+
+        <a href="https://public.tableau.com/profile/kunal.arun.seth#!/vizhome/MurderRatio-TotalPopulation/MurderRatio-TotalPopulation" target="_blank">
+            <img src="images/d2.png"></a>
+
+    <br><br>
+
+        <p>Next I also wanted to analyse if there are any other trend with respect to position on the map so I plotted all the states on the map along with the murder index per 100000 people.
+        <h5 style="font-weight:bold">Interpretation:</h5> Location on the map represents actual location of the state and colour is the distinguishing factor between states.
+        <br><h5 style="font-weight:bold">Inference:</h5> A very interesting trend followed this visualization. States along the south border had a much higher murder ratio as compared to northern states. Almost all states along the south border had a ratio above 5 as compared to 2 in the northern states. <br>
+
+        <a href="https://public.tableau.com/profile/kunal.arun.seth#!/vizhome/MapDashboard_5/MapDashboard" target="_blank">
+            <img src="images/d3.png"></a>
+
+    <br><br>
+
+        <p>I further decided to see if there is some trend with where people stay in a particular state, so I split the population into metropolitan population and non-metropolitan population based on the counties they live in. Below I have 2 additional graphs created- Graph 1 has Metro murder ratio (per 100000) plotted against the metropolitan population and Graph 2 has Non-metro murder ratio plotted against non-metro population and these 2 graphs have been compared to Overall state murder ratio vs total state population.
+        <h5 style="font-weight:bold">Interpretation:</h5> All the 3 graphs are connected to each other and selecting a state in any one of the graph will filter that state in the other 2 graphs too. The ratio axis are synced to each other so position is a direct comparison.
+        <br><h5 style="font-weight:bold">Inference:</h5> There are many states which are actually much safer in the non-metro areas and others are safe in the metro areas. This relation can help in making a safe decision!! <br>
+
+        <a href="https://public.tableau.com/profile/kunal.arun.seth#!/vizhome/Ratio-Population/Ratio-Population" target="_blank">
+            <img src="images/d4.png"></a>
+
+    <br><br>
+
+        <p>Finally I also wanted to include a 4th dimension to our exploration and I included the area of the states. In the below visualization I have included 4 dimensions-namely murders/square kilometre, Murder/100000 which represent the x and y axis respectively; the states are represented by different colours and the area (in square km) are represented by the size.
+        <h5 style="font-weight:bold">Interpretation:</h5>
+        <br>State-Ordinal Variable- Shown by position
+        <br>Murders/Sqkm and Murders/100000- Quantitative Variable- Shown by Position
+        <br>Area- Quantitative Variable- Shown by Size/Area
+        <br><h5 style="font-weight:bold">Inference:</h5> DC comes out on top as the most murders per square km and also murders per 100000 people. The values are huge! Also other states which did not really come up when compared in murders/100000 have come up now and can help in making a more responsible decision. <br>
+
+        <a href="https://public.tableau.com/profile/kunal.arun.seth#!/vizhome/MurderArea-MurderPopulation-StateArea/MurderArea-MurderPopulation-StateArea" target="_blank">
+            <img src="images/d5.png"></a>
+
+
+    </div>
+
+
+
+
+
+<hr><hr>
+
+	<p><a href="https://public.tableau.com/profile/kunal.arun.seth#!/vizhome/BurtinsAntibioticGraph/AntibioticMICEffectiveness" target="_blank">
     <H1>Assignment 1: Visualization Design</H1>
 	<H3>Team Members: Anya Chaliotis, Aakash Bang, Kunal Seth</H3>
     <img src="images/dashboard.png">
@@ -42,8 +101,9 @@
 
         <section id="main_content">
 
+</section>
 
       </div>
-    </div>
+</div>
   </body>
 </html>
